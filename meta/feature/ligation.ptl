@@ -13,6 +13,8 @@ export : define [progLigNameMap] : object
 	.XIDR {'arrow2', 'plusplus', 'dotoper', 'logic', 'idris'}
 	.XELM {'arrow2', 'plusplus', 'dotoper', 'logic', 'elm'}
 	.PURS {'arrow2', 'plusplus', 'dotoper', 'logic', 'purescript'}
+	# TODO expand
+	.SCAL {'arrow2'}
 	.XPTL {'arrow2', 'plusplus', 'patel'}
 	.SWFT {'arrow2', 'plusplus', 'swift'}
 	.XV__ {'arrow2', 'plusplus', 'dotoper', 'logic', 'brst', 'coq'}
