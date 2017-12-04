@@ -383,3 +383,17 @@ sequence = "->"
 unicode = 57717 # 0xe175
 featureTag = 'XHS0'
 sequence = ">>="
+
+# -----------------------------------------
+# Equality operators
+# -----------------------------------------
+
+[[iosevka.compLig]]
+unicode = 57718 # 0xe176
+featureTag = 'XHS0'
+sequence = "==="
+
+[[iosevka.compLig]]
+unicode = 57719 # 0xe177
+featureTag = 'XHS0'
+sequence = "=/="

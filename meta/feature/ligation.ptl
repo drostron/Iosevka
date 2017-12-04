@@ -14,7 +14,7 @@ export : define [progLigNameMap] : object
 	.XELM {'arrow2', 'plusplus', 'dotoper', 'logic', 'elm'}
 	.PURS {'arrow2', 'plusplus', 'dotoper', 'logic', 'purescript'}
 	# TODO expand
-	.SCAL {'arrow2'}
+	.SCAL {'arrow2', 'equality'}
 	.XPTL {'arrow2', 'plusplus', 'patel'}
 	.SWFT {'arrow2', 'plusplus', 'swift'}
 	.XV__ {'arrow2', 'plusplus', 'dotoper', 'logic', 'brst', 'coq'}
@@ -35,6 +35,8 @@ local [stickClass style] : [lsx style] {'hyphen' 'equal'}
 local less {'less'}
 local hyphen {'hyphen'}
 local equal {'equal'}
+local notequal {'notequal'}
+local slash {'slash'}
 local exclam {'exclam'}
 local greater {'greater'}
 local alphabet {
@@ -245,6 +247,19 @@ export : define [buildLigations chain-rule lookupOrder commonList features looku
 					match      {{'bar'} [[lsx 'trig'] {'bar'}]}
 					to         [[lsx 'trig'] {'bar'}]
 					inputIndex 0
+
+	do "equality"
+		includeLookup
+			.type 'gsub_chaining'
+			.subtables : list
+				chain-rule # ===
+					equal ~> preserved
+					equal ~> [lsx 'zf']
+					equal ~> preserved
+				chain-rule # =/=
+					equal ~> [lsx 'fz']
+					slash ~> notequal
+					equal ~> [lsx 'zf']
 
 	do "Arrows" 
 		includeLookup
