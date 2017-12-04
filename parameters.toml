@@ -376,12 +376,22 @@ defLigSet = "XV00"
 
 [[iosevka.compLig]]
 unicode = 57673 # 0xe149
-featureTag = 'XHS0'
+featureTag = 'SCAL'
 sequence = "->"
 
 [[iosevka.compLig]]
+unicode = 57697 # 0xe161
+featureTag = 'SCAL'
+sequence = "=>"
+
+[[iosevka.compLig]]
+unicode = 57721 # 0xe179
+featureTag = 'SCAL'
+sequence = "<-"
+
+[[iosevka.compLig]]
 unicode = 57717 # 0xe175
-featureTag = 'XHS0'
+featureTag = 'SCAL'
 sequence = ">>="
 
 # -----------------------------------------
@@ -390,10 +400,10 @@ sequence = ">>="
 
 [[iosevka.compLig]]
 unicode = 57718 # 0xe176
-featureTag = 'XHS0'
+featureTag = 'SCAL'
 sequence = "==="
 
 [[iosevka.compLig]]
 unicode = 57719 # 0xe177
-featureTag = 'XHS0'
+featureTag = 'SCAL'
 sequence = "=/="
