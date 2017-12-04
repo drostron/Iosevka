@@ -367,3 +367,19 @@ defLigSet = "XV00"
 # unicode = 57600 # 0xE100
 # featureTag = 'XV00'
 # sequence = '<*>'
+
+# As described in https://gist.github.com/mrkgnao/49c7480e1df42405a36b7ab09fe87f3d
+
+# -----------------------------------------
+# Arrow-like operators
+# -----------------------------------------
+
+[[iosevka.compLig]]
+unicode = 57673 # 0xe149
+featureTag = 'XHS0'
+sequence = "->"
+
+[[iosevka.compLig]]
+unicode = 57717 # 0xe175
+featureTag = 'XHS0'
+sequence = ">>="
