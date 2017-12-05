@@ -380,6 +380,11 @@ featureTag = 'SCAL'
 sequence = "->"
 
 [[iosevka.compLig]]
+unicode = 57691 # 0xe15b
+featureTag = 'SCAL'
+sequence = ">-"
+
+[[iosevka.compLig]]
 unicode = 57697 # 0xe161
 featureTag = 'SCAL'
 sequence = "=>"
@@ -407,3 +412,26 @@ sequence = "==="
 unicode = 57719 # 0xe177
 featureTag = 'SCAL'
 sequence = "=/="
+
+# -----------------------------------------
+# Monadic operators
+# -----------------------------------------
+
+[[iosevka.compLig]]
+unicode = 57769 # 0xe1a9
+featureTag = 'SCAL'
+sequence = ">=>"
+
+[[iosevka.compLig]]
+unicode = 57772 # 0xe1ac
+featureTag = 'SCAL'
+sequence = ">==>"
+
+# -----------------------------------------
+# Misc operators
+# -----------------------------------------
+
+[[iosevka.compLig]]
+unicode = 57783 # 0xe1b7
+featureTag = 'SCAL'
+sequence = ":="
