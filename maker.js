@@ -3,10 +3,18 @@ const path = require('path');
 const argv = require('yargs').argv;
 const pad = require('pad');
 
-const weights = ['thin', 'extralight', 'light', 'book', 'medium', 'bold', 'heavy'];
-const slantnesses = ['upright', 'italic', 'oblique'];
-const widths = ['term', 'normal', 'cc'];
-const designs = ['sans', 'slab'];
+function argSplit(name) {
+  let result = [];
+  if (argv[name]) {
+    result = argv[name].trim().split(/ +/);
+  }
+  return result;
+}
+
+let weights = argSplit('weights');
+let slantnesses = argSplit('slantnesses');
+let widths = argSplit('widths');
+let designs = argSplit('designs');
 
 function present(x) {
 	return !!x;
@@ -101,14 +109,14 @@ if (argv.custom) {
 		{
 			custom: '$(BUILD)/targets-' + argv.custom + '.mk',
 			name: 'customized-' + argv.custom,
-			design: argv.design.trim().split(/ +/),
-			prestyle: argv.prestyle.trim().split(/ +/),
+			design: argSplit('design'),
+			prestyle: argSplit('prestyle'),
 			width: argv.width,
 			infix: argv.custom,
 			styles: {
-				upright: argv.upright.trim().split(/ +/),
-				italic: argv.italic.trim().split(/ +/),
-				oblique: argv.oblique.trim().split(/ +/)
+				upright: argSplit('upright'),
+				italic: argSplit('italic'),
+				oblique: argSplit('oblique')
 			}
 		}
 	];

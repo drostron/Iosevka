@@ -52,8 +52,20 @@ endif
 ifndef prestyle
 prestyle = nothing
 endif
+ifndef weights
+weights = thin extralight light book medium bold heavy
+endif
+ifndef slantnesses
+slantnesses = upright italic oblique
+endif
+ifndef widths
+widths = term normal cc
+endif
+ifndef designs
+designs = sans slab
+endif
 
-CREATECONFIG = node maker.js --custom $(set) --design '$(design)' --upright '$(upright)' --italic '$(italic)' --oblique '$(oblique)' --prestyle '$(prestyle)' > $(BUILD)/targets-$(set).mk
+CREATECONFIG = node maker.js --custom $(set) --design '$(design)' --upright '$(upright)' --italic '$(italic)' --oblique '$(oblique)' --prestyle '$(prestyle)' --weights '$(weights)' --slantnesses '$(slantnesses)' --widths '$(widths)' --designs '$(designs)' > $(BUILD)/targets-$(set).mk
 
 custom-config : maker.js | $(BUILD)/
 	$(CREATECONFIG)
