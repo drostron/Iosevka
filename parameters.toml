@@ -413,6 +413,11 @@ unicode = 57719 # 0xe177
 featureTag = 'SCAL'
 sequence = "=/="
 
+[[iosevka.compLig]]
+unicode = 57804 # 0xe1cc
+featureTag = 'SCAL'
+sequence = "=="
+
 # -----------------------------------------
 # Monadic operators
 # -----------------------------------------

@@ -260,6 +260,9 @@ export : define [buildLigations chain-rule lookupOrder commonList features looku
 					equal ~> [lsx 'fz']
 					slash ~> notequal
 					equal ~> [lsx 'zf']
+				chain-rule # ==
+					equal ~> preserved
+					equal ~> [lsx 'zf']
 
 	do "Arrows" 
 		includeLookup
