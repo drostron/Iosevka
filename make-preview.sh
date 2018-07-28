@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-gmake custom
+make custom
 
 sleep 1
 
