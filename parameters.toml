@@ -385,6 +385,21 @@ featureTag = 'SCAL'
 sequence = ">-"
 
 [[iosevka.compLig]]
+unicode = 57692 # 0xe15c
+featureTag = 'SCAL'
+sequence = "-<"
+
+[[iosevka.compLig]]
+unicode = 57693 # 0xe15d
+featureTag = 'SCAL'
+sequence = "->-"
+
+[[iosevka.compLig]]
+unicode = 57694 # 0xe15e
+featureTag = 'SCAL'
+sequence = "-<-"
+
+[[iosevka.compLig]]
 unicode = 57697 # 0xe161
 featureTag = 'SCAL'
 sequence = "=>"
@@ -393,11 +408,6 @@ sequence = "=>"
 unicode = 57721 # 0xe179
 featureTag = 'SCAL'
 sequence = "<-"
-
-[[iosevka.compLig]]
-unicode = 57717 # 0xe175
-featureTag = 'SCAL'
-sequence = ">>="
 
 # -----------------------------------------
 # Equality operators
@@ -418,9 +428,24 @@ unicode = 57804 # 0xe1cc
 featureTag = 'SCAL'
 sequence = "=="
 
+[[iosevka.compLig]]
+unicode = 57805 # 0xe1cd
+featureTag = 'SCAL'
+sequence = "/="
+
 # -----------------------------------------
 # Monadic operators
 # -----------------------------------------
+
+[[iosevka.compLig]]
+unicode = 57717 # 0xe175
+featureTag = 'SCAL'
+sequence = ">>="
+
+[[iosevka.compLig]]
+unicode = 57720 # 0xe178
+featureTag = 'SCAL'
+sequence = "=<<"
 
 [[iosevka.compLig]]
 unicode = 57769 # 0xe1a9
@@ -431,6 +456,31 @@ sequence = ">=>"
 unicode = 57772 # 0xe1ac
 featureTag = 'SCAL'
 sequence = ">==>"
+
+[[iosevka.compLig]]
+unicode = 57770 # 0xe1aa
+featureTag = 'SCAL'
+sequence = "<=<"
+
+[[iosevka.compLig]]
+unicode = 57771 # 0xe1ab
+featureTag = 'SCAL'
+sequence = ">->"
+
+[[iosevka.compLig]]
+unicode = 57773 # 0xe1ad
+featureTag = 'SCAL'
+sequence = "<-<"
+
+[[iosevka.compLig]]
+unicode = 57774 # 0xe1ae
+featureTag = 'SCAL'
+sequence = "=>="
+
+[[iosevka.compLig]]
+unicode = 57775 # 0xe1af
+featureTag = 'SCAL'
+sequence = "=<="
 
 # -----------------------------------------
 # Misc operators
